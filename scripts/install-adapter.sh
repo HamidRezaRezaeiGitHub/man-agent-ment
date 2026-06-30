@@ -72,6 +72,7 @@ ensure_directories() {
       "$target/ai/skills/handoff/agents" \
       "$target/ai/workflows" \
       "$target/ai/skills/interview-questions/agents" \
+      "$target/ai/prompts/session" \
       "$target/ai/templates/requirement" \
       "$target/ai/templates/wiki" \
       "$target/ai/scripts" \
@@ -146,6 +147,13 @@ copy_if_missing "$pack/ai/skills/handoff/SKILL.md" "$target/ai/skills/handoff/SK
 copy_if_missing "$pack/ai/skills/handoff/agents/openai.yaml" "$target/ai/skills/handoff/agents/openai.yaml"
 copy_if_missing "$pack/ai/skills/interview-questions/SKILL.md" "$target/ai/skills/interview-questions/SKILL.md"
 copy_if_missing "$pack/ai/skills/interview-questions/agents/openai.yaml" "$target/ai/skills/interview-questions/agents/openai.yaml"
+copy_if_missing "$pack/ai/prompts/session/start-requirement.md" "$target/ai/prompts/session/start-requirement.md"
+copy_if_missing "$pack/ai/prompts/session/start-requirement-planning-only.md" "$target/ai/prompts/session/start-requirement-planning-only.md"
+copy_if_missing "$pack/ai/prompts/session/continue-requirement.md" "$target/ai/prompts/session/continue-requirement.md"
+copy_if_missing "$pack/ai/prompts/session/shape-requirement-from-keywords.md" "$target/ai/prompts/session/shape-requirement-from-keywords.md"
+copy_if_missing "$pack/ai/prompts/session/review-requirement.md" "$target/ai/prompts/session/review-requirement.md"
+copy_if_missing "$pack/ai/prompts/session/analyze-requirements-stats.md" "$target/ai/prompts/session/analyze-requirements-stats.md"
+copy_if_missing "$pack/ai/prompts/session/suggest-next-requirements.md" "$target/ai/prompts/session/suggest-next-requirements.md"
 copy_if_missing "$pack/ai/workflows/workflow-dispatch.md" "$target/ai/workflows/workflow-dispatch.md"
 copy_if_missing "$pack/ai/workflows/requirement-planning.md" "$target/ai/workflows/requirement-planning.md"
 copy_if_missing "$pack/ai/workflows/wiki-documentation.md" "$target/ai/workflows/wiki-documentation.md"

@@ -1,5 +1,5 @@
 name: default-agent-instruction-pack
-version: 0.4.11
+version: 0.4.12
 description: Portable starter pack for multi-agent coding assistants with deterministic wiki reminder hooks.
 
 entry_files:
@@ -43,6 +43,20 @@ shared_sources:
     purpose: Requirement-workspace handoff skill for refreshing PLAN.md and FINDINGS.md.
   - path: packs/default/ai/skills/interview-questions/SKILL.md
     purpose: Proportional user interview skill for requirement planning and direct plan stress-testing.
+  - path: packs/default/ai/prompts/session/start-requirement.md
+    purpose: Copy-paste prompt template for starting a new requirement session in an adopted project.
+  - path: packs/default/ai/prompts/session/start-requirement-planning-only.md
+    purpose: Copy-paste prompt template for planning a new requirement without implementation.
+  - path: packs/default/ai/prompts/session/continue-requirement.md
+    purpose: Copy-paste prompt template for resuming an existing requirement in a fresh session.
+  - path: packs/default/ai/prompts/session/shape-requirement-from-keywords.md
+    purpose: Copy-paste prompt template for shaping a vague keyword-driven request into a concrete requirement.
+  - path: packs/default/ai/prompts/session/review-requirement.md
+    purpose: Copy-paste prompt template for reviewing a requirement before more work, handoff, commit, or PR.
+  - path: packs/default/ai/prompts/session/analyze-requirements-stats.md
+    purpose: Copy-paste prompt template for summarizing local requirement workspace status and trends.
+  - path: packs/default/ai/prompts/session/suggest-next-requirements.md
+    purpose: Copy-paste prompt template for proposing concrete next requirement candidates.
 
 adoption:
   script: scripts/install-adapter.sh
@@ -69,6 +83,13 @@ adoption:
   prompts:
     - packs/default/ai/prompts/adoption/adopt-pack.md
     - packs/default/ai/prompts/adoption/update-pack.md
+    - packs/default/ai/prompts/session/start-requirement.md
+    - packs/default/ai/prompts/session/start-requirement-planning-only.md
+    - packs/default/ai/prompts/session/continue-requirement.md
+    - packs/default/ai/prompts/session/shape-requirement-from-keywords.md
+    - packs/default/ai/prompts/session/review-requirement.md
+    - packs/default/ai/prompts/session/analyze-requirements-stats.md
+    - packs/default/ai/prompts/session/suggest-next-requirements.md
   target_paths:
     - AGENTS.md
     - CLAUDE.md
@@ -95,6 +116,13 @@ adoption:
     - ai/skills/handoff/agents/openai.yaml
     - ai/skills/interview-questions/SKILL.md
     - ai/skills/interview-questions/agents/openai.yaml
+    - ai/prompts/session/start-requirement.md
+    - ai/prompts/session/start-requirement-planning-only.md
+    - ai/prompts/session/continue-requirement.md
+    - ai/prompts/session/shape-requirement-from-keywords.md
+    - ai/prompts/session/review-requirement.md
+    - ai/prompts/session/analyze-requirements-stats.md
+    - ai/prompts/session/suggest-next-requirements.md
     - ai/workflows/workflow-dispatch.md
     - ai/workflows/requirement-planning.md
     - ai/workflows/wiki-documentation.md
