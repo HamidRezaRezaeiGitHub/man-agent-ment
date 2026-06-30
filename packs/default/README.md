@@ -37,6 +37,13 @@ scripts/install-adapter.sh --dry-run /path/to/target-project
 - `ai/skills/handoff/agents/openai.yaml` -> `ai/skills/handoff/agents/openai.yaml`
 - `ai/skills/interview-questions/SKILL.md` -> `ai/skills/interview-questions/SKILL.md`
 - `ai/skills/interview-questions/agents/openai.yaml` -> `ai/skills/interview-questions/agents/openai.yaml`
+- `ai/prompts/session/start-requirement.md` -> `ai/prompts/session/start-requirement.md`
+- `ai/prompts/session/start-requirement-planning-only.md` -> `ai/prompts/session/start-requirement-planning-only.md`
+- `ai/prompts/session/continue-requirement.md` -> `ai/prompts/session/continue-requirement.md`
+- `ai/prompts/session/shape-requirement-from-keywords.md` -> `ai/prompts/session/shape-requirement-from-keywords.md`
+- `ai/prompts/session/review-requirement.md` -> `ai/prompts/session/review-requirement.md`
+- `ai/prompts/session/analyze-requirements-stats.md` -> `ai/prompts/session/analyze-requirements-stats.md`
+- `ai/prompts/session/suggest-next-requirements.md` -> `ai/prompts/session/suggest-next-requirements.md`
 - `ai/workflows/workflow-dispatch.md` -> `ai/workflows/workflow-dispatch.md`
 - `ai/workflows/requirement-planning.md` -> `ai/workflows/requirement-planning.md`
 - `ai/workflows/wiki-documentation.md` -> `ai/workflows/wiki-documentation.md`
@@ -68,7 +75,7 @@ scripts/install-adapter.sh --dry-run /path/to/target-project
 
 The `ai/scripts` target avoids colliding with a project's existing application scripts.
 
-Adoption prompts under `packs/default/ai/prompts/adoption/` are source-repo migration aids and are not copied into target projects.
+Session prompts under `packs/default/ai/prompts/session/` are copied into target projects as reusable prompt templates. Adoption prompts under `packs/default/ai/prompts/adoption/` are source-repo migration aids and are not copied into target projects.
 
 `requirements/<slug>/` is local-only by default. `PLAN.md` and `FINDINGS.md` let agents on the same machine collaborate through the same local workspace. When cross-machine collaboration is needed, the user can intentionally force-add a single requirement folder in git.
 

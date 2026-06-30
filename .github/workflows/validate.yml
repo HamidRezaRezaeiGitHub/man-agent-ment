@@ -64,10 +64,17 @@ jobs:
           fi
 
           scripts/install-adapter.sh "$target"
-          if [ -e "$target/ai/prompts" ]; then
-            echo "adoption prompts should not be installed to $target/ai/prompts" >&2
+          if [ -e "$target/ai/prompts/adoption" ]; then
+            echo "adoption prompts should not be installed to $target/ai/prompts/adoption" >&2
             exit 1
           fi
+          test -f "$target/ai/prompts/session/start-requirement.md"
+          test -f "$target/ai/prompts/session/start-requirement-planning-only.md"
+          test -f "$target/ai/prompts/session/continue-requirement.md"
+          test -f "$target/ai/prompts/session/shape-requirement-from-keywords.md"
+          test -f "$target/ai/prompts/session/review-requirement.md"
+          test -f "$target/ai/prompts/session/analyze-requirements-stats.md"
+          test -f "$target/ai/prompts/session/suggest-next-requirements.md"
           scripts/audit-adoption.sh "$target"
 
           (

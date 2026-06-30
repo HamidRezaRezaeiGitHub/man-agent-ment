@@ -18,6 +18,16 @@ ai/scripts/wiki-lint.sh
 ai/scripts/wiki-lint.sh --warn-placeholders
 ```
 
+## Prompt Templates
+
+- `ai/prompts/session/start-requirement.md`: copy-paste prompt for starting a new requirement and continuing into implementation.
+- `ai/prompts/session/start-requirement-planning-only.md`: copy-paste prompt for planning a new requirement without implementation.
+- `ai/prompts/session/continue-requirement.md`: copy-paste prompt for resuming an existing requirement workspace.
+- `ai/prompts/session/shape-requirement-from-keywords.md`: copy-paste prompt for turning rough keywords or symptoms into a concrete requirement with a stronger interview pass.
+- `ai/prompts/session/review-requirement.md`: copy-paste prompt for reviewing a requirement before more work, handoff, commit, or PR.
+- `ai/prompts/session/analyze-requirements-stats.md`: copy-paste prompt for summarizing local requirement workspace status and trends.
+- `ai/prompts/session/suggest-next-requirements.md`: copy-paste prompt for proposing concrete next requirement candidates.
+
 ## Skills
 
 - `ai/skills/interview-questions/SKILL.md`: ask proportional decision-shaping questions before implementation.
