@@ -43,7 +43,6 @@ scripts/install-adapter.sh --dry-run /path/to/target-project
 - `ai/prompts/session/shape-requirement-from-keywords.md` -> `ai/prompts/session/shape-requirement-from-keywords.md`
 - `ai/prompts/session/review-requirement.md` -> `ai/prompts/session/review-requirement.md`
 - `ai/prompts/session/analyze-requirements-stats.md` -> `ai/prompts/session/analyze-requirements-stats.md`
-- `ai/prompts/session/suggest-next-requirements.md` -> `ai/prompts/session/suggest-next-requirements.md`
 - `ai/workflows/workflow-dispatch.md` -> `ai/workflows/workflow-dispatch.md`
 - `ai/workflows/requirement-planning.md` -> `ai/workflows/requirement-planning.md`
 - `ai/workflows/wiki-documentation.md` -> `ai/workflows/wiki-documentation.md`

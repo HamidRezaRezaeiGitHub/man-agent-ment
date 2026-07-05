@@ -60,7 +60,6 @@ check_mapping "$pack/ai/prompts/session/continue-requirement.md" "ai/prompts/ses
 check_mapping "$pack/ai/prompts/session/shape-requirement-from-keywords.md" "ai/prompts/session/shape-requirement-from-keywords.md"
 check_mapping "$pack/ai/prompts/session/review-requirement.md" "ai/prompts/session/review-requirement.md"
 check_mapping "$pack/ai/prompts/session/analyze-requirements-stats.md" "ai/prompts/session/analyze-requirements-stats.md"
-check_mapping "$pack/ai/prompts/session/suggest-next-requirements.md" "ai/prompts/session/suggest-next-requirements.md"
 check_mapping "$pack/ai/workflows/workflow-dispatch.md" "ai/workflows/workflow-dispatch.md"
 check_mapping "$pack/ai/workflows/requirement-planning.md" "ai/workflows/requirement-planning.md"
 check_mapping "$pack/ai/workflows/wiki-documentation.md" "ai/workflows/wiki-documentation.md"

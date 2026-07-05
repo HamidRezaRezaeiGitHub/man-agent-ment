@@ -16,7 +16,7 @@ The guiding rule is simple: keep durable behavior in reusable workflows, then ex
 - Systematic debugging guidance for reproducing, localizing, fixing, and verifying defects without guess-and-check loops.
 - Baseline verification before source edits when a safe project command exists.
 - CI, testing, command-output, architecture, and two-pass code-review workflows.
-- Installed session prompt templates for starting, planning, resuming, shaping, reviewing, analyzing, and suggesting requirements without retyping workflow trigger phrases.
+- Installed session prompt templates for starting, planning, resuming, shaping, reviewing, and analyzing requirements without retyping workflow trigger phrases.
 - Adoption prompts for clean projects, existing projects with current AI instructions, temporary install review, and pack updates.
 
 ## Why This Exists
