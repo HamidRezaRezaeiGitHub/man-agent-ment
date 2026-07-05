@@ -1,18 +1,18 @@
-# Prompt: Start Requirement Planning Only
+Start a new requirement.
+Follow project's AI instructions. Start with `ai/workflows/workflow-dispatch.md`, then follow `ai/workflows/requirement-planning.md`.
 
-Use this in a project with installed AI workflow instructions when a fresh agent session should plan a new requirement but not implement it yet.
+Title: <title>
 
-```text
-Start requirement planning only. Do not implement the requirement in this session unless I explicitly ask afterward.
+Final goal:
+<describe the final goal of the requirement>
 
-Requirement:
-<describe the requirement, context, constraints, acceptance criteria, links, or notes here>
+Technical details:
+- <describe the technical details, constraints, dependencies, or considerations here>
 
-Use this project's installed AI instructions. Start with `ai/workflows/workflow-dispatch.md`, then follow `ai/workflows/requirement-planning.md`.
+Examples or references:
+- <provide examples, references, or links to relevant resources here>
 
-If the request is vague or outcome-oriented, use `ai/workflows/vibe-coding-translation.md` before source discovery.
+If any clarification is needed, use the `interview-questions` skill.
+If there are rooms to improvement relevant to the requirement which might be a refactoring, best practices, a better approach, or a more efficient solution, include your suggestions and reasoning as part of the questions. 
 
-Use the installed interview-question guidance for decisions that would change scope, validation, rollout, or risk. Include your recommended default with each question.
-
-Create or update the requirement workspace, capture assumptions and open questions, identify likely validation, and stop after leaving the plan ready for a future implementation session.
-```
+This first round is only planning, which is the most important phase. Do not worry about implementation yet.
