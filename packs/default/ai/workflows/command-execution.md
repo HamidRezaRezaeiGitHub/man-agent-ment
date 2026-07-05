@@ -41,4 +41,4 @@ Prefer narrowing by file, test name, package, or target before reading large log
 
 ## Reporting
 
-When reporting command results, summarize the meaningful lines rather than pasting long logs. Mention when output was filtered.
+When reporting command results, summarize the meaningful lines rather than pasting long logs.

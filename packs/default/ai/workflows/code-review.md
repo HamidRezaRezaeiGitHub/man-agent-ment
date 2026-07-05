@@ -48,14 +48,13 @@ If the review is large, review in focused chunks. Prefer reviewing smaller diffs
 
 Before asking someone else to review or before finalizing:
 
-1. Read the diff yourself.
-2. Run Pass 1: requirement fit.
-3. Run Pass 2: implementation quality and risk.
-4. Remove accidental files, debug code, dead code, and unrelated changes.
-5. Add notes for reviewers when file order, risky areas, or non-obvious decisions matter.
-6. Verify tests, CI expectations, and wiki updates are recorded in the plan.
-7. Verify important review findings are captured in `FINDINGS.md` or the PR review when they help future agents.
-8. If the review causes source changes, rerun the smallest meaningful validation affected by those changes.
+1. Run Pass 1: requirement fit.
+2. Run Pass 2: implementation quality and risk.
+3. Remove accidental files, debug code, dead code, and unrelated changes.
+4. Add notes for reviewers when file order, risky areas, or non-obvious decisions matter.
+5. Verify tests, CI expectations, and wiki updates are recorded in the plan.
+6. Verify important review findings are captured in `FINDINGS.md` or the PR review when they help future agents.
+7. If the review causes source changes, rerun the smallest meaningful validation affected by those changes.
 
 ## Two-Pass Review
 

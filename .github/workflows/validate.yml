@@ -74,7 +74,6 @@ jobs:
           test -f "$target/ai/prompts/session/shape-requirement-from-keywords.md"
           test -f "$target/ai/prompts/session/review-requirement.md"
           test -f "$target/ai/prompts/session/analyze-requirements-stats.md"
-          test -f "$target/ai/prompts/session/suggest-next-requirements.md"
           scripts/audit-adoption.sh "$target"
 
           (

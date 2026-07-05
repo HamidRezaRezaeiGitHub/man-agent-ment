@@ -1,18 +1,18 @@
-# Prompt: Start Requirement
-
-Use this in a project with installed AI workflow instructions when a fresh agent session should start a new requirement and continue through implementation.
-
-```text
 Start a new requirement.
+Follow project's AI instructions. Start with `ai/workflows/workflow-dispatch.md`, then follow `ai/workflows/requirement-planning.md`.
 
-Requirement:
-<describe the requirement, context, constraints, acceptance criteria, links, or notes here>
+Title: <title>
 
-Use this project's installed AI instructions. Start with `ai/workflows/workflow-dispatch.md`, then follow `ai/workflows/requirement-planning.md`.
+Final goal:
+<describe the final goal of the requirement>
 
-If the request is vague or outcome-oriented, use `ai/workflows/vibe-coding-translation.md` before source discovery.
+Technical details:
+- <describe the technical details, constraints, dependencies, or considerations here>
 
-If a decision would change scope, implementation, validation, rollout, or risk, use the installed interview-question guidance and include your recommended default. Otherwise, make reasonable assumptions, record them in the requirement workspace, and continue.
+Examples or references:
+- <provide examples, references, or links to relevant resources here>
 
-After the plan is clear enough, implement the requirement. Before finishing, use `ai/workflows/ci-validation.md`, `ai/workflows/code-review.md`, and `ai/workflows/wiki-documentation.md` as applicable.
-```
+If any clarification is needed, use the `interview-questions` skill.
+If there is room for improvement relevant to the requirement which might be a refactoring, best practices, a better approach, or a more efficient solution, include your suggestions and reasoning as part of the questions. 
+
+Once the plan is clear enough, implement the requirement. Before finishing, use `ai/workflows/ci-validation.md`, `ai/workflows/code-review.md`, and `ai/workflows/wiki-documentation.md` as applicable.

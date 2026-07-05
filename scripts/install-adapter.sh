@@ -153,7 +153,6 @@ copy_if_missing "$pack/ai/prompts/session/continue-requirement.md" "$target/ai/p
 copy_if_missing "$pack/ai/prompts/session/shape-requirement-from-keywords.md" "$target/ai/prompts/session/shape-requirement-from-keywords.md"
 copy_if_missing "$pack/ai/prompts/session/review-requirement.md" "$target/ai/prompts/session/review-requirement.md"
 copy_if_missing "$pack/ai/prompts/session/analyze-requirements-stats.md" "$target/ai/prompts/session/analyze-requirements-stats.md"
-copy_if_missing "$pack/ai/prompts/session/suggest-next-requirements.md" "$target/ai/prompts/session/suggest-next-requirements.md"
 copy_if_missing "$pack/ai/workflows/workflow-dispatch.md" "$target/ai/workflows/workflow-dispatch.md"
 copy_if_missing "$pack/ai/workflows/requirement-planning.md" "$target/ai/workflows/requirement-planning.md"
 copy_if_missing "$pack/ai/workflows/wiki-documentation.md" "$target/ai/workflows/wiki-documentation.md"

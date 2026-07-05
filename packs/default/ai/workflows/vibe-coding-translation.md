@@ -31,7 +31,7 @@ Do not over-apply this workflow to precise developer tasks. If the request alrea
 Before implementation:
 
 1. Restate the request in concrete product/behavior terms.
-2. Check `wiki/domain/ubiquitous-language.md` when it exists, and preserve canonical domain terms in the translation.
+2. Preserve canonical domain terms. Follow `Domain Language` below.
 3. Identify affected users, screens, APIs, workflows, data, or operational surfaces.
 4. Identify acceptance criteria observable by a human.
 5. Identify open questions, assumptions, ambiguous terms, and synonyms.
@@ -82,8 +82,6 @@ Use plain language when summarizing back to the requester:
 - where to see or test it,
 - what remains out of scope,
 - what validation was performed.
-
-Avoid unnecessary implementation jargon unless the user asks for it.
 
 ## Safety
 

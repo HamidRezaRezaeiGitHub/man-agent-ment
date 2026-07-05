@@ -13,7 +13,7 @@ The wiki is a compiled knowledge layer. Source code, READMEs, ADRs, issues, requ
 
 Requirement-specific findings belong in `requirements/<slug>/FINDINGS.md` first. Promote them into the wiki only when they become durable project knowledge.
 
-Agents should use the wiki to reduce broad source scans. Start from `wiki/index.md`, read only relevant wiki pages, then inspect source code narrowly when implementation details are needed.
+Agents should use the wiki to reduce broad source scans. Follow `Lookup` below for the reading procedure.
 
 ## Continuous Maintenance
 
@@ -148,20 +148,7 @@ Allowed actions: `create`, `update`, `ingest`, `lint`, `query`.
 
 ## Wiki Lint
 
-When asked to lint or health-check the wiki, check for:
-
-- broken links,
-- orphan pages,
-- missing index entries,
-- stale or contradicted content,
-- missing frontmatter,
-- outdated `last_updated` values,
-- missing cross-links between related pages,
-- pages that should be split or merged.
-
-Prefer fixing small issues directly and summarizing larger recommendations.
-
-Use the bundled script when available:
+Use the bundled script:
 
 ```sh
 ai/scripts/wiki-lint.sh
@@ -169,4 +156,4 @@ ai/scripts/wiki-lint.sh
 
 The script checks for missing topic-page frontmatter, broken relative Markdown links, and topic pages missing from `wiki/index.md`.
 
-In adopted projects, use `ai/scripts/wiki-lint.sh --warn-placeholders` to surface leftover `TODO` and `YYYY-MM-DD` wiki placeholders without failing, or `--strict-placeholders` when unfinished placeholders should fail validation. Keep the default lint compatible with starter wiki templates, which intentionally include placeholders.
+Use `ai/scripts/wiki-lint.sh --warn-placeholders` to surface leftover `TODO` and `YYYY-MM-DD` wiki placeholders without failing, or `--strict-placeholders` when unfinished placeholders should fail validation. Keep the default lint compatible with starter wiki templates, which intentionally include placeholders.

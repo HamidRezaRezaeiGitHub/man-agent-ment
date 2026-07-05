@@ -16,7 +16,7 @@ Classify the request before broad source search:
 - `large`: multi-file, multi-step, cross-area, or ambiguous work that needs a stronger plan and handoff discipline.
 - `risky`: work touching security, auth, payments, privacy, data migrations, infra, public APIs, irreversible data changes, or production operations.
 
-When unsure between two levels, choose the higher level only if the extra process will reduce real risk.
+When unsure between two levels, choose the higher level.
 
 ## Routing Table
 
@@ -34,15 +34,12 @@ When unsure between two levels, choose the higher level only if the extra proces
 | Before finishing implementation | `ai/workflows/ci-validation.md` | Then use `ai/workflows/code-review.md` for the two-pass review |
 | Wiki or durable knowledge change | `ai/workflows/wiki-documentation.md` | Promote from `FINDINGS.md` only when knowledge is reusable beyond the requirement |
 
-## Token-Burn Rules
+## Rules
 
 - Do not create a requirement workspace for `quick` tasks unless the user asks.
-- Do not read all workflows. Use this dispatcher, then read only the routed workflow files.
-- Do not ask broad interview questions for `quick` tasks. For larger tasks, use `ai/skills/interview-questions/SKILL.md` to scale clarifying questions with complexity and ask only what cannot be answered from the repo.
+- For larger tasks, use `ai/skills/interview-questions/SKILL.md` to scale clarifying questions with complexity and ask only what cannot be answered from the repo.
 - For standard or larger work, check for an existing `requirements/` workspace and read `PLAN.md` and `FINDINGS.md` before wiki or source code.
-- For source discovery, search for narrow symbols, paths, or errors before opening whole files.
-- For debugging, use `systematic-debugging.md` before proposing fixes; quick obvious issues can use its lightweight reproduce/localize/fix/verify loop.
-- Prefer summaries and links in `FINDINGS.md`; avoid copying large wiki, source, or terminal output.
+- For debugging, use `systematic-debugging.md` before proposing fixes.
 - If the task grows beyond its initial classification, update `PLAN.md` with the new complexity and why.
 
 ## Required Plan Record
@@ -51,5 +48,5 @@ For `standard`, `large`, or `risky` work, record the chosen complexity in `PLAN.
 
 - why that level was chosen,
 - which workflows apply,
-- which workflows are intentionally skipped to save tokens,
+- which workflows are intentionally skipped,
 - any escalation trigger that would require stronger review.

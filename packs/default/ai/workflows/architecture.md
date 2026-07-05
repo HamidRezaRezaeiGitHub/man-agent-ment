@@ -68,15 +68,7 @@ While planning and implementing, answer these briefly in `PLAN.md` when relevant
 
 Architecture documentation belongs in the wiki. Use focused pages instead of one giant architecture document.
 
-Recommended starter pages:
-
-- `wiki/architecture/system-overview.md`
-- `wiki/architecture/tech-stack.md`
-- `wiki/architecture/data-flow.md`
-- `wiki/architecture/integration-points.md`
-- `wiki/architecture/decisions.md`
-
-For major decisions, record the decision, context, considered options, outcome, and consequences.
+Use the same page structure listed in `Context Lookup` above. For major decisions, record the decision, context, considered options, outcome, and consequences.
 
 ## Review Lens
 
