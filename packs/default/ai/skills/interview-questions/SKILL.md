@@ -6,20 +6,20 @@ description: Ask proportional decision-shaping questions before implementation o
 # Interview Questions
 
 Use this skill to turn uncertainty into a small set of useful decisions. Ask what cannot be answered from local context, scale depth by task size, and include a recommended answer so the user can accept a good default quickly.
+Other than the unclear aspects, if you have improvement suggestions which are relevant to the requirement, include them in your questions.
 
 ## Workflow
 
 1. Read available local context first: current prompt, active `PLAN.md` and `FINDINGS.md`, relevant wiki/docs, and narrow source areas. Do not ask a question when the repository can answer it cheaply.
-2. Classify the task with `ai/workflows/workflow-dispatch.md` when this is part of requirement work.
-3. Identify only decisions that can change the plan, implementation, validation, rollout, or risk profile.
-4. Ask proportional questions:
+2. Identify only decisions that can change the plan, implementation, validation, rollout, or risk profile.
+3. Ask proportional questions:
    - `quick`: ask none unless blocked; if blocked, ask one question.
-   - `standard`: ask at most 2-4 decision-shaping questions before proceeding.
+   - `standard`: ask at most 6 decision-shaping questions before proceeding.
    - `large`: walk the decision tree more deliberately; ask one question at a time when dependencies matter.
    - `risky`: ask one question at a time for unresolved safety, privacy, security, data, production, or irreversible decisions.
    - direct user invocation: continue interviewing until the user says the plan is clear enough, summarizing decisions as they settle.
-5. For each question, include your recommended answer or default. If useful, include 2-3 concrete options and mark the recommendation.
-6. After answers arrive, summarize settled decisions and record durable answers in `PLAN.md` or `FINDINGS.md` when a requirement workspace exists.
+4. For each question, include your recommended answer or default. If useful, include 2-3 concrete options and mark the recommendation.
+5. After answers arrive, summarize settled decisions and record durable answers in `PLAN.md` or `FINDINGS.md` when a requirement workspace exists.
 
 ## Question Shape
 

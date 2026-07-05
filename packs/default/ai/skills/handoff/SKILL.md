@@ -7,7 +7,7 @@ description: Refresh a requirement workspace so the next agent with fresh contex
 
 Use this skill to make the active requirement workspace handoff-ready for another agent or for a later session.
 
-Do not create a repo-root `HANDOFF.md`. In this pack, the canonical handoff surfaces are `requirements/<slug>/PLAN.md` and `requirements/<slug>/FINDINGS.md`.
+The canonical handoff surfaces are `requirements/<slug>/PLAN.md` and `requirements/<slug>/FINDINGS.md`.
 
 ## Workflow
 

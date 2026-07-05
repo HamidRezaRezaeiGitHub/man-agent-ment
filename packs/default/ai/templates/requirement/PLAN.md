@@ -40,20 +40,54 @@ TODO: Summarize the user's requirement in a few sentences.
 
 ## Plan
 
+Break implementation into phases. Each phase should be independently completable and verifiable — small enough to hand off to a developer. Phase 0 and the closing phases are fixed; replace the middle phases with actual implementation phases.
+
+### Phase 0: Setup
+
 - [ ] Confirm or infer requirement title.
 - [ ] Classify complexity.
-- [ ] Decide whether vibe-coding translation is needed.
-- [ ] Review existing [FINDINGS.md](./FINDINGS.md) before wiki/docs/source search.
-- [ ] When resuming, inspect recent diffs, handoff notes, and the next unfinished checklist item before broad discovery.
-- [ ] Check relevant wiki/docs and inspect source narrowly.
-- [ ] Run or record baseline verification before source edits when available.
-- [ ] Ask only unresolved decision-shaping questions.
-- [ ] Update [FINDINGS.md](./FINDINGS.md), then revise this plan. (Plan may contain multiple steps)
-- [ ] If the handoff state becomes sparse or stale, run `ai/skills/handoff/SKILL.md`.
-- [ ] Implement the requirement. (Replace this entry with the actual implementation steps.)
-- [ ] Run targeted validation and review CI expectations.
-- [ ] Perform two-pass self-review with `ai/workflows/code-review.md`.
+- [ ] Vibe-coding translation, if needed. (Based on `ai/workflows/vibe-coding-translation.md`)
+- [ ] Context discovery, including [FINDINGS.md](./FINDINGS.md) and relevant wiki/docs/source. (Based on `ai/workflows/requirement-planning.md` and `ai/workflows/wiki-documentation.md`)
+- [ ] Baseline verification before source edits.
+- [ ] Clarifying and suggestion decision-shaping questions. (Based on `ai/skills/interview-questions.md`)
+- [ ] Update [FINDINGS.md](./FINDINGS.md), fill in phases below.
+
+**Done when:** plan context is clear, phases are defined, and baseline is recorded.
+
+### Phase 1: TODO — [brief scope]
+
+**Goal:** TODO: one sentence describing what this phase delivers.
+
+- [ ] TODO
+- [ ] TODO
+
+**Done when:** TODO: verifiable condition (test passes, command succeeds, output exists, etc.).
+
+### Phase 2: TODO — [brief scope]
+
+**Goal:** TODO.
+
+- [ ] TODO
+
+**Done when:** TODO.
+
+### Validation
+
+**Goal:** Confirm the implementation meets requirements.
+
+- [ ] Run targeted validation and review CI expectations based on `ai/workflows/ci-validation.md`.
+- [ ] Perform two-pass self-review based on `ai/workflows/code-review.md`.
+
+**Done when:** CI passes and self-review complete.
+
+### Wrap-up
+
+**Goal:** Close the requirement cleanly.
+
 - [ ] Update wiki and handoff notes when durable knowledge changes.
+- [ ] Update `last_modified` and `status` in this plan.
+
+**Done when:** Wiki updated or reason noted in PLAN.md; handoff notes current.
 
 ## Decisions
 
@@ -65,10 +99,8 @@ TODO: Summarize the user's requirement in a few sentences.
 
 ## Handoff Notes
 
-- Goal or current objective: TODO.
-- Current progress or completed work: TODO.
+(Based on `ai/skills/handoff/SKILL.md`)
+
 - What worked: TODO.
 - What did not work or should not be retried blindly: TODO.
-- Next steps: TODO.
 - Parallel-safe pickup tasks, if any: TODO.
-- Keep detailed reusable context in [FINDINGS.md](./FINDINGS.md).
