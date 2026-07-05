@@ -49,7 +49,7 @@ Break implementation into phases. Each phase should be independently completable
 - [ ] Vibe-coding translation, if needed. (Based on `ai/workflows/vibe-coding-translation.md`)
 - [ ] Context discovery, including [FINDINGS.md](./FINDINGS.md) and relevant wiki/docs/source. (Based on `ai/workflows/requirement-planning.md` and `ai/workflows/wiki-documentation.md`)
 - [ ] Baseline verification before source edits.
-- [ ] Clarifying and suggestion decision-shaping questions. (Based on `ai/skills/interview-questions.md`)
+- [ ] Clarifying and suggestion decision-shaping questions. (Based on `ai/skills/interview-questions/SKILL.md`)
 - [ ] Update [FINDINGS.md](./FINDINGS.md), fill in phases below.
 
 **Done when:** plan context is clear, phases are defined, and baseline is recorded.

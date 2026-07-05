@@ -6,7 +6,7 @@ Follow project's installed AI instructions. Start with `ai/workflows/requirement
 Use `ai/workflows/code-review.md` for the review lens.
 
 If any clarification is needed, use the `interview-questions` skill.
-If there are rooms to improvement relevant to the requirement which might be a refactoring, best practices, a better approach, or a more efficient solution, include your suggestions and reasoning as part of the questions.
+If there is room for improvement relevant to the requirement which might be a refactoring, best practices, a better approach, or a more efficient solution, include your suggestions and reasoning as part of the questions.
 
 Lead with findings that could affect correctness, scope, validation, handoff safety, or maintainability. Include file/path references when available. If no issues are found, say that clearly and note any remaining risk or validation gap.
 
